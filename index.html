@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><span>MR</span>code</a>
+            <ul class="links">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SKILLS</a></li>
+                <li><a href="#">PROJECTS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <div class="socail-link">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <i id="btnmenu" class="fa-solid fa-bars"></i>
+        </nav>
+    </header>
+    <div class="hero-sec">
+        <div class="contanier">
+            <div class="dev-text">
+                <h1>ziad ahmed</h1>
+                <span>programer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium saepe voluptate nesciunt eos qui doloribus alias expedita consequuntur quasi, nostrum odit consectetur illo quis culpa beatae? Accusamus harum quo debitis?</p>
+                <a href="#" class="btn">MY WORKS</a>
+                <div class="img">
+                    <img src="./photo/275625ebc17dad2.jpg" alt="">
+                </div>
+            </div>
+            <div class="dev-img">
+                <img src="./photo/avatar.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let btnmenu = document.getElementById("btnmenu");
+        let navlinks = document.querySelector(".links")
+
+        btnmenu.onclick = function() {
+            navlinks.classList.toggle("active")
+            btnmenu.classlist.toggel("fa-times")
+        }
+    </script>
+</body>
+</html>
